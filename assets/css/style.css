@@ -62,9 +62,9 @@ h5, h6, .h5, .h6, .fw-normal {
 	transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
 	z-index: 99999;
 	background: linear-gradient(to right, var(--bs-secondary), var(--bs-primary));
-	background-size: 100% !important;
+	background-size: cover !important;
 	width: 100% !important;
-	height: 100% !important;
+	height: 100vh !important;
 	min-height: 100vh;
 }
 
@@ -368,6 +368,13 @@ h5, h6, .h5, .h6, .fw-normal {
 	text-transform: uppercase;
 	font-size: 37px;
 }
+.section-title p{
+	color: var(--bs-primary);
+	font-weight: 600 !important;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 18px;
+}
 
 /******************************************************************************* */
 /*                                      About                                    */
@@ -455,6 +462,10 @@ h5, h6, .h5, .h6, .fw-normal {
 	white-space: nowrap;
 	overflow: hidden;
 	transition: 0.5s;
+}
+
+.Committee-item:hover .btn:disabled {
+	width: 210px;
 }
 
 .Committee-item:hover .btn {
